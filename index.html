@@ -115,7 +115,7 @@ function calc() {
   document.getElementById('result').innerHTML = `You could save <strong>£\( {savings.toLocaleString()}</strong>/year in \){c}!`;
   document.getElementById('progressFill').style.width = (phase/total*100)+'%';
 }
-calc(); // Initialize calculator
+calc(); // Initialize on load
 
 function nextPhase() {
   if (phase < total) {
