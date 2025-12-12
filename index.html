@@ -34,7 +34,7 @@
 <div class="progress"><div class="fill" id="progressFill"></div></div>
 
 <div>
-  <div class="phase completed" onclick="nextPhase()">1</div>
+  <div class="phase completed" id="p1" onclick="nextPhase()">1</div>
   <div class="phase active" id="p2" onclick="nextPhase()">2</div>
   <div class="phase" id="p3" onclick="nextPhase()">3</div>
   <div class="phase" id="p4" onclick="nextPhase()">4</div>
@@ -115,7 +115,7 @@ function calc() {
   document.getElementById('result').innerHTML = `You could save <strong>£\( {savings.toLocaleString()}</strong>/year in \){c}!`;
   document.getElementById('progressFill').style.width = (phase/total*100)+'%';
 }
-calc(); // Run on load to initialize
+calc(); // Initialize calculator
 
 function nextPhase() {
   if (phase < total) {
