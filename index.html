@@ -123,5 +123,43 @@ function askAI() {
   document.getElementById('aiResponse').innerHTML = answer;
 }
 </script>
+<script>
+let phase = 1;
+const total = 11;
+
+function calc() {
+  const p = parseInt(document.getElementById('pension').value)||0;
+  const r = parseInt(document.getElementById('property').value)||0;
+  const c = document.getElementById('country').value;
+  document.getElementById('pensionVal').textContent = p.toLocaleString();
+  document.getElementById('propertyVal').textContent = r.toLocaleString();
+  const savings = Math.round(p*0.35 + r*0.0025);
+  document.getElementById('result').innerHTML = `You could save <strong>£\( {savings.toLocaleString()}</strong>/year in \){c}!`;
+  document.getElementById('progressFill').style.width = (phase/total*100)+'%';
+}
+calc();
+
+function nextPhase() {
+  if (phase < total) {
+    phase++;
+    document.getElementById('p'+(phase-1)).classList.replace('active','completed');
+    document.getElementById('p'+phase).classList.add('active');
+    calc();
+    if (phase === 11) document.getElementById('phase11').style.display = 'block';
+  }
+}
+
+// AI Advisor (simple placeholder logic)
+function askAI() {
+  const q = document.getElementById('aiQuestion').value.toLowerCase();
+  let answer = "I'm your AI relocation expert! ";
+  if (q.includes("spain")) answer += "Spain's Non-Lucrative visa needs €2,400/month. Great healthcare & weather!";
+  else if (q.includes("portugal")) answer += "Portugal D7 visa only €870/month. 10% tax on UK pensions — very popular!";
+  else if (q.includes("thailand")) answer += "Thailand is amazing on £1,500/month. Elite Visa £15k one-off.";
+  else answer += "Ask me about any country — Portugal, Spain, Thailand, UAE, Cyprus, etc!";
+  document.getElementById('aiResponse').innerHTML = answer;
+}
+</script>
 </body>
+</html>
 </html>
