@@ -51,6 +51,7 @@
   <select id="country" onchange="calc()">
     <option>Portugal</option><option>Spain</option><option>UAE</option><option>Thailand</option><option>Cyprus</option>
     <option>Greece</option><option>Italy</option><option>France</option><option>Poland</option><option>Malta</option>
+    <option>Malaysia</option><option>Panama</option><option>Mexico</option><option>Ecuador</option><option>Costa Rica</option>
   </select>
 
   <label>Annual Pension: £<span id="pensionVal">25,000</span></label>
@@ -75,29 +76,69 @@
 </div>
 
 <div class="card" id="phase11" style="display:none;">
-  <h2>Phase 11 – Retirement Visa Comparison</h2>
+  <h2>Phase 11 – Retirement Visa Comparison (20 Countries)</h2>
   <table>
     <tr><th>Country</th><th>Visa</th><th>Min Income</th><th>Age</th><th>PR Path</th></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Portugal</td><td>D7</td><td>€870/mo</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">10% flat tax on pensions • Family included • Golden Visa €250k option</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Spain</td><td>Non-Lucrative</td><td>€2,400/mo</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">No work allowed • Golden Visa €500k property</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>UAE</td><td>Retirement Visa</td><td>£4,200/mo</td><td>55+</td><td>No</td></tr>
     <tr class="detail"><td colspan="5">0% income tax • Property purchase AED 1M</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Thailand</td><td>O-A / Elite</td><td>£1,500/mo</td><td>50+</td><td>No</td></tr>
     <tr class="detail"><td colspan="5">Elite Visa £15k one-off • Very popular with Brits</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Cyprus</td><td>Category F</td><td>£8,400/yr</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">Permanent residency €300k property • EU access</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Greece</td><td>FIP</td><td>€3,500/mo</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">Golden Visa €250k • Beautiful islands</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Italy</td><td>Elective Residence</td><td>€31k/yr</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">Flat 7% tax in south Italy • Lifestyle heaven</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>France</td><td>Long-Stay Visitor</td><td>€1,800/mo</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">UK pension tax treaty • Free healthcare via S1</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Malta</td><td>Retirement Programme</td><td>€10k/yr</td><td>55+</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">15% tax on foreign income • English-speaking</td></tr>
+
     <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Poland</td><td>Temporary Residence</td><td>£160/mo</td><td>None</td><td>5 yrs</td></tr>
     <tr class="detail"><td colspan="5">Cheapest in EU • Low cost of living</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Malaysia</td><td>MM2H</td><td>$1,500/mo</td><td>50+</td><td>No</td></tr>
+    <tr class="detail"><td colspan="5">Low cost of living • English widely spoken • Tropical climate</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Panama</td><td>Pensionado</td><td>$1,000/mo</td><td>None</td><td>Immediate PR</td></tr>
+    <tr class="detail"><td colspan="5">Senior discounts • No tax on foreign income • Dollar economy</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Mexico</td><td>Temporary Resident</td><td>$2,500/mo</td><td>None</td><td>4 yrs</td></tr>
+    <tr class="detail"><td colspan="5">Affordable living • Great healthcare • Close to UK flights</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Ecuador</td><td>Pensioner Visa</td><td>$800/mo</td><td>None</td><td>2 yrs</td></tr>
+    <tr class="detail"><td colspan="5">Very low cost • Beautiful nature • Senior benefits</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Costa Rica</td><td>Pensionado</td><td>$1,000/mo</td><td>None</td><td>3 yrs</td></tr>
+    <tr class="detail"><td colspan="5">50% utility discounts • Family included • Pura Vida lifestyle</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Bulgaria</td><td>D Visa</td><td>€1,000/mo</td><td>None</td><td>5 yrs</td></tr>
+    <tr class="detail"><td colspan="5">EU access • Low taxes • Black Sea coast</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Indonesia</td><td>Retirement (KITAS)</td><td>$1,500/mo</td><td>55+</td><td>No</td></tr>
+    <tr class="detail"><td colspan="5">Bali paradise • Low cost • 5-year renewable</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Colombia</td><td>Pension Visa</td><td>$900/mo</td><td>None</td><td>5 yrs</td></tr>
+    <tr class="detail"><td colspan="5">Vibrant culture • Affordable cities • Growing expat community</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Mauritius</td><td>Retired Non-Citizen</td><td>$1,500/mo</td><td>50+</td><td>10 yrs</td></tr>
+    <tr class="detail"><td colspan="5">Tax haven • English/French spoken • Island paradise</td></tr>
+
+    <tr onclick="this.nextElementSibling.classList.toggle('show')"><td>Belize</td><td>QRP</td><td>$2,000/mo</td><td>45+</td><td>No</td></tr>
+    <tr class="detail"><td colspan="5">English-speaking • Tax-free pension • Caribbean beaches</td></tr>
   </table>
 </div>
 
@@ -115,7 +156,7 @@ function calc() {
   document.getElementById('result').innerHTML = `You could save <strong>£\( {savings.toLocaleString()}</strong>/year in \){c}!`;
   document.getElementById('progressFill').style.width = (phase/total*100)+'%';
 }
-calc(); // Initialize on load
+calc();
 
 function nextPhase() {
   if (phase < total) {
